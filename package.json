@@ -1,0 +1,52 @@
+{
+  "name": "gifshot",
+  "version": "0.4.5",
+  "description": "JavaScript library that can create animated gifs from video streams (e.g. webcam), existing videos (e.g. mp4), or existing images",
+  "main": "./dist/gifshot",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yahoo/gifshot.git"
+  },
+  "keywords": [
+    "gif",
+    "animated gif",
+    "WebRTC",
+    "getUserMedia"
+  ],
+  "contributors": [
+    {
+      "name": "Chase West"
+    },
+    {
+      "name": "Greg Franko"
+    }
+  ],
+  "scripts": {
+    "preview": "node demo/server/server.js",
+    "build": "gulp build",
+    "watch": "gulp watch"
+  },
+  "precommit": [
+    "build"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@rollup/plugin-babel": "^5.2.2",
+    "@rollup/plugin-node-resolve": "^11.0.1",
+    "chai": "^1.9.1",
+    "express": "^4.2.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^6.1.2",
+    "gulp-iife": "^0.3.0",
+    "gulp-insert": "^0.3.0",
+    "gulp-install": "^0.2.0",
+    "gulp-mocha": "^1.1.2",
+    "jshint": "latest",
+    "precommit-hook": "^1.0.7",
+    "rollup": "^2.35.1"
+  },
+  "engine": {
+    "node": ">= 4.0.0"
+  },
+  "license": "MIT"
+}
